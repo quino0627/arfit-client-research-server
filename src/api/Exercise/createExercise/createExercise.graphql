@@ -1,0 +1,8 @@
+type Mutation {
+  createExercise(
+    name: String!
+    machineId: Int
+    muscleMain: String
+    muscleSub: String
+  ): Exercise!
+}

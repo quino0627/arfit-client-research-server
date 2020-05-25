@@ -1,0 +1,3 @@
+type Mutation {
+  createMachine(name: String!, description: String!): Machine!
+}

@@ -1,0 +1,12 @@
+type Mutation {
+  createQuest(
+    playerId: Int!
+    exerciseId: Int!
+    sets: Int!
+    reps: Int!
+    weight: Int!
+    when: String!
+    # when is DATETIEM
+    isDone: Boolean
+  ): Quest!
+}

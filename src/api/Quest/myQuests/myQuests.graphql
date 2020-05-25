@@ -1,0 +1,9 @@
+enum FULFILLTYPES {
+  ALL
+  FULFILLED
+  UNFULFILLED
+}
+
+type Query {
+  myQuests(fulfill: FULFILLTYPES): [Quest!]
+}

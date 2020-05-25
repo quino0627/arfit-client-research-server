@@ -1,0 +1,51 @@
+type Query {
+  dummy: String
+}
+
+enum Role {
+  ADMIN
+  User
+}
+
+type User {
+  id: Int!
+  name: String!
+  createdAt: String
+  lastLoginAt: String
+  loginWhere: String
+  QuestList: [Quest!]!
+  role: Role!
+  loginSecret: String
+}
+
+type Quest {
+  id: Int!
+  player: User!
+  playerId: Int!
+  exercise: [Exercise!]!
+  sets: Int!
+  reps: Int!
+  weight: Int!
+  feel: Int
+  when: String!
+  isDone: Boolean!
+}
+
+type Exercise {
+  id: Int!
+  name: String!
+  muscleMain: String
+  muscleSub: String
+  machine: Machine
+  machineId: Int
+  quest: [Quest!]!
+  tips: String
+  caution: String
+}
+
+type Machine {
+  id: Int!
+  name: String!
+  description: String!
+  availableExercises: [Exercise!]!
+}

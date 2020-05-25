@@ -1,0 +1,19 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "CreateField",
+      "model": "Exercise",
+      "field": "tips",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Exercise",
+      "field": "caution",
+      "type": "String",
+      "arity": "Optional"
+    }
+  ]
+}

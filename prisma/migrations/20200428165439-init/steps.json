@@ -1,0 +1,19 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "CreateField",
+      "model": "Exercise",
+      "field": "muscleMain",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Exercise",
+      "field": "muscleSub",
+      "type": "String",
+      "arity": "Optional"
+    }
+  ]
+}
